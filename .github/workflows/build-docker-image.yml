@@ -26,7 +26,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         registry: nvcr.io
-        username: $oauth2accesstoken
+        username: '$oauthtoken'
         password: ${{ secrets.NGC_API_KEY }}
     
     - name: Build and push Isaac Lab
