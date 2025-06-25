@@ -36,6 +36,10 @@ jobs:
         file: ./docker/Dockerfile.base
         push: true
         tags: |
-          ghcr.io/uwlab-isaaclab/isaaclab-latest
+          ghcr.io/${{ github.repository }}/isaaclab:latest
+          ghcr.io/${{ github.repository }}/isaaclab:${{ github.sha }}
+        build-args: |
+          ISAACSIM_BASE_IMAGE_ARG=nvcr.io/nvidia/isaac-sim
+          ISAACSIM_VERSION_ARG=4.5.0
         cache-from: type=gha
         cache-to: type=gha,mode=max
