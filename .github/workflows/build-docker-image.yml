@@ -41,6 +41,6 @@ jobs:
         build-args: |
           ISAACSIM_BASE_IMAGE_ARG=nvcr.io/nvidia/isaac-sim
           ISAACSIM_VERSION_ARG=4.5.0
-          ISAACLAB_PATH=/workspace/isaaclab
+          ISAACLAB_PATH=/workspace/IsaacLab
         cache-from: type=gha
         cache-to: type=gha,mode=max
