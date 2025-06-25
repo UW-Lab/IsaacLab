@@ -36,7 +36,6 @@ jobs:
         file: ./docker/Dockerfile.base
         push: true
         tags: |
-          ghcr.io/uwlab-isaaclab/isaaclab:latest
-          ghcr.io/uwlab-isaaclab/isaaclab:${{ github.sha }}
+          ghcr.io/uwlab-isaaclab/isaaclab-latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
